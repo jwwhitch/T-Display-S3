@@ -1,10 +1,10 @@
 #pragma once
 
+#define WIFI_SSID                    "underground"
+#define WIFI_PASSWORD                "wh1tch3r4"
+
 // #define WIFI_SSID                    "Your-ssid"
 // #define WIFI_PASSWORD                "Your-password"
-
-#define WIFI_SSID                    "Your-ssid"
-#define WIFI_PASSWORD                "Your-password"
 
 #define WIFI_CONNECT_WAIT_MAX        (30 * 1000)
 

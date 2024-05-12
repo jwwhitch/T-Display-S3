@@ -1,8 +1,6 @@
 /* Please make sure your touch IC model. */
 // If you don't have a touch panel, you don't need to define a touch model
 
-// 定义一个触摸型号，如果不清楚你使用的触摸型号，可以任意定义一个触摸型号，将下面两行中的一个取消掉，如果触摸不正常，那就换另一个试试
-// 如果不定义,则禁用触摸功能
 // #define TOUCH_MODULES_CST_MUTUAL
 // #define TOUCH_MODULES_CST_SELF
 
@@ -39,7 +37,7 @@
 // Commenting this line will automatically get the time zone, provided that the SSL certificate is valid.
 // Please pay attention to check the validity of the certificate.
 // The current configuration certificate is valid until April 16, 2024
-#define CUSTOM_TIMEZONE         "CST-8"
+#define CUSTOM_TIMEZONE         "America/Los_Angeles"
 
 
 esp_lcd_panel_io_handle_t io_handle = NULL;

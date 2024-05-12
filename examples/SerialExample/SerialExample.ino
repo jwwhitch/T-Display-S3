@@ -28,7 +28,7 @@ void setup()
     Serial1.begin(9600, SERIAL_8N1, rx1_pin, tx1_pin);
 
     // Remap the input and output of Serial2
-    Serial2.begin(9600, SERIAL_8N1, rx2_pin, tx2_pin);
+    // Serial2.begin(9600, SERIAL_8N1, rx2_pin, tx2_pin);
 
 }
 
@@ -36,17 +36,13 @@ void setup()
 void loop()
 {
 
-    while (Serial1.available()) {
-        Serial.write(Serial1.read());
-    }
-
-    while (Serial2.available()) {
-        Serial.write(Serial2.read());
-    }
-
     while (Serial.available()) {
-        Serial1.write(Serial.read());
+        Serial.write(Serial.read());
     }
+
+    //while (Serial2.available()) {
+    //    Serial.write(Serial2.read());
+    //}
 
     delay(1);
 }
